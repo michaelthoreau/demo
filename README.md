@@ -50,10 +50,49 @@ git commit -m "my commit message"
 
 # see the updated status
 git status
+
+# see that we added to the commit log
+git log
 ```
 
 ## now we push the local repository to the cloud (remote)
 ```
 git push
 ```
+
+## now lets create a new branch 
+```
+# create a 'branch'
+git branch new_branch
+
+# switch the local repository to the new branch
+git checkout new_branch
+```
+
+## lets modify our file
+```
+# edit your python script as you wish
+nano test.py
+```
+
+## commit your new branch
+```
+# dont forget to add every time
+git add test.py
+
+# commit
+git commit -m "new branch"
+```
+
+## lets swap back to the other branch
+```
+git checkout master
+```
+
+## now lets do a 'merge'
+```
+git merge new_branch
+```
+
+
 
